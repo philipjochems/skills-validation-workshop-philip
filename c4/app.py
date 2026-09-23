@@ -3,7 +3,7 @@ from google import genai
 from google.genai import types
 
 st.set_page_config(page_title="AI Chatbot", page_icon="🤖")
-st.title("AI Conversation Specialist")
+st.title("AI Chatbot")
 
 # Initialize the Gemini client in session state so it persists across reruns
 if "client" not in st.session_state:
@@ -37,11 +37,10 @@ if user_input := st.chat_input("Type your message here..."):
 
     # Configuration definitions matching your main script
     model_id = "gemini-3.6-flash"
-    si_text1 = "You are an conversation specialist. Respond in natural language."
+    si_text1 = "You are a helpful, conversational AI specialist. Answer the user's questions in a natural, engaging tone. You have access to Google Search tool; utilize it seamlessly to provide accurate, up-to-date, and location-aware information when needed."
 
     tools = [
         types.Tool(google_search=types.GoogleSearch()),
-        types.Tool(google_maps=types.GoogleMaps()),
     ]
     tool_config = types.ToolConfig(
         retrieval_config=types.RetrievalConfig(),
