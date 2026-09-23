@@ -1,0 +1,10 @@
+{
+  "call_id": "INC-44912",
+  "date": "07/02/2026, 13:08 PST",
+  "customer": "M. Thompson",
+  "agent": "Eli K.",
+  "product": "ADS Field Alerts Portal",
+  "issue": "User keeps getting 'token expired' after login and saw random duplicate alerts in dashboard.",
+  "resolution": "Agent asked caller to clear browser cache, try a private window, and disable old bookmark. Follow-up promised tomorrow morning.",
+  "escalate": "no"
+}
