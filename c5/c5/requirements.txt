@@ -1,0 +1,7 @@
+streamlit
+google-cloud-logging
+google-cloud-bigquery
+google-cloud-modelarmor
+google-genai
+pypdf
+protobuf
